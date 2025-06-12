@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: #fff0fe;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #ff69b4;
+    padding: 20px;
+    color: white;
+}
+
+.mensagem, .galeria {
+    margin: 40px 20px;
+}
+
+
+.galeria .fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.6);
+    filter: brightness(1.1) saturate(1.2);
+}
+
+
+footer {
+    background-color: #ffc0cb;
+    padding: 15px;
+    color: #555;
+}
